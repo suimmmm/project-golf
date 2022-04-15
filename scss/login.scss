@@ -15,9 +15,29 @@
 
 #logo-box{
   >i{
-    width: 50px;
-    border: 1px solid;
+    width: 20px;
     text-align: center;
+    color: var(--color-d);
+  }
+  h1{
+    display: inline-block;
   }
 }
 
+#login-box{
+  >input{
+    padding: 10px;
+    @include wid-hei(100%, 30px);
+    font-size: 14px;
+  }
+  a{
+    h1{
+      @include wid-hei(80%, 50px);
+      @include margin(10px, auto);
+      text-align: center;
+      border-radius: 30px;
+      background-color: var(--color-c);
+      color: var(--color-f);
+    }
+  }
+}
