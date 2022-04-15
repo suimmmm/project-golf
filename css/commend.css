@@ -1,1 +1,37 @@
-/* No CSS *//*# sourceMappingURL=commend.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#mob {
+  width: 500px;
+  height: 926px;
+  overflow-y: scroll;
+  border: 1px solid;
+}
+
+#mob div {
+  width: 100%;
+  height: 1200px;
+  background-color: aqua;
+}
+
+#mob::-webkit-scrollbar {
+  width: 5px;
+}
+
+#mob::-webkit-scrollbar-thumb {
+  background-color: #999;
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
+#mob::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+/*# sourceMappingURL=commend.css.map */
