@@ -8,11 +8,17 @@
           box-sizing: border-box;
 }
 
+:root {
+  --color-a:#B7D6B0;
+  --color-b:#98C462;
+  --color-c:#6FAD60;
+  --color-d:#2E5F42;
+}
+
 #mob {
-  width: 500px;
-  height: 926px;
+  width: 100vw;
+  height: 100vh;
   overflow-y: scroll;
-  border: 1px solid;
 }
 
 #mob::-webkit-scrollbar {

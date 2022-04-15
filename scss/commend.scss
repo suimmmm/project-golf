@@ -1,11 +1,20 @@
 *{margin: 0;padding: 0;color: inherit;text-decoration: none;list-style: none; box-sizing: border-box;}
 
-#mob{
-  width: 500px;
-  height: 926px;
-  overflow-y: scroll;
-  border: 1px solid;
+:root{
+  --color-a:#B7D6B0;
+  --color-b:#98C462;
+  --color-c:#6FAD60;
+  --color-d:#2E5F42;
 }
+
+// 기본 커스텀
+#mob{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+// 스크롤바
 #mob::-webkit-scrollbar{
   width: 5px;
 }
