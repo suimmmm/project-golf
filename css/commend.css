@@ -13,12 +13,18 @@
   --color-b:#98C462;
   --color-c:#6FAD60;
   --color-d:#2E5F42;
+  --color-e:#383838;
+  --color-f:#fffddd;
 }
 
 #mob {
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+}
+
+#mob section {
+  margin: 20px auto;
 }
 
 #mob::-webkit-scrollbar {

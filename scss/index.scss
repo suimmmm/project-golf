@@ -1,0 +1,102 @@
+@mixin wid-hei($wid,$hei) {
+  width: $wid;
+  height: $hei;
+}
+@mixin flex($justify,$align,$direction,$wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin margin($t-b, $l-r) {
+  margin: $t-b $l-r;
+}
+
+@keyframes slide-a {
+  0%{
+    display: block;
+  }
+  50%{
+    display: none;
+  }
+  100%{
+    display: none;
+  }
+}
+@keyframes slide-b {
+  0%{
+    display: none;
+  }
+  50%{
+    display: block;
+  }
+  100%{
+    display: none;
+  }
+}
+@keyframes slide-c {
+  0%{
+    display: none;
+  }
+  50%{
+    display: none;
+  }
+  100%{
+    display: block;
+  }
+}
+
+
+#mob{
+  background-color: var(--color-d);
+}
+
+// 텍스트
+#txt-box{
+  @include wid-hei(90%, 20%);
+  border: 1px solid;
+  color: var(--color-f);
+  text-align: center;
+  h1{
+    line-height: 50px;
+  }
+  p{
+    line-height: 30px;
+  }
+}
+
+#slide-box{
+  @include wid-hei(90%, fit-content);
+
+  div{
+    border-radius: 50%;
+  }
+  >#slide{
+    @include wid-hei(250px, 250px); 
+    @include margin(10px, auto);
+    background-color: var(--color-a);
+    border: 2px dashed var(--color-e);
+    position: relative;
+    
+    >#item{
+      position: absolute;
+      top: 0;
+      left: 35%;
+      text-align: center;
+      >i{
+        color: var(--color-f);
+        line-height: 250px;
+      }
+    }
+    >#item:nth-child(1){
+      animation: slide-a 2s infinite;
+    }
+    >#item:nth-child(2){
+      animation: slide-b 2s infinite;
+    }
+    >#item:nth-child(3){
+      animation: slide-b 2s infinite;
+    }
+  }
+}

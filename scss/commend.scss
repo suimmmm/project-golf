@@ -5,13 +5,32 @@
   --color-b:#98C462;
   --color-c:#6FAD60;
   --color-d:#2E5F42;
+  --color-e:#383838;
+  --color-f:#fffddd;
+}
+@mixin wid-hei($wid,$hei) {
+  width: $wid;
+  height: $hei;
+}
+@mixin flex($justify,$align,$direction,$wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin margin($t-b, $l-r) {
+  margin: $t-b $l-r;
 }
 
 // 기본 커스텀
 #mob{
-  width: 100vw;
-  height: 100vh;
+  @include wid-hei(100vw, 100vh);
   overflow-y: scroll;
+  
+  section{
+    @include margin(20px, auto);
+  }
 }
 
 // 스크롤바
