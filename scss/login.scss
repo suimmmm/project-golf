@@ -30,14 +30,41 @@
     @include wid-hei(100%, 30px);
     font-size: 14px;
   }
-  a{
-    h1{
-      @include wid-hei(80%, 50px);
+  >a{
+    >h1{
+      @include wid-hei(100%, 50px);
       @include margin(10px, auto);
       text-align: center;
       border-radius: 30px;
       background-color: var(--color-c);
       color: var(--color-f);
+    }
+  }
+  #a-box{
+    @include wid-hei(100%, fit-content);
+    @include flex(center, center, row, nowrap);
+
+    a{
+      @include wid-hei(50%, fit-content);
+      display: block;
+      text-align: center;
+      width: 50%;
+    }
+  }
+}
+
+
+#simple-login{
+  #b-box{
+    @include wid-hei(80%, fit-content);
+    @include margin(10px, auto);
+    @include flex(space-between, center, row, nowrap);
+    text-align: center;
+
+    a{
+      @include wid-hei(40px, 40px);
+      border-radius: 50%;
+      background-color: var(--color-a);
     }
   }
 }
