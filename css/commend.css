@@ -21,10 +21,31 @@
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+  position: relative;
 }
 
 #mob section {
-  margin: 20px auto;
+  margin: 30px auto;
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#mob > #icon-box {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px 5%;
+  margin: 20px 5%;
+}
+
+#mob > #icon-box a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #mob::-webkit-scrollbar {
@@ -39,5 +60,20 @@
 
 #mob::-webkit-scrollbar-track {
   border-radius: 10px;
+}
+
+h1 {
+  line-height: 50px;
+  font-size: 16px;
+}
+
+h4 {
+  line-height: 50px;
+  font-size: 14px;
+}
+
+p {
+  line-height: 30px;
+  font-size: 11px;
 }
 /*# sourceMappingURL=commend.css.map */

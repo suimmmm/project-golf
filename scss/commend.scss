@@ -27,9 +27,21 @@
 #mob{
   @include wid-hei(100vw, 100vh);
   overflow-y: scroll;
+  position: relative;
   
   section{
-    @include margin(20px, auto);
+    @include margin(30px, auto);
+    @include wid-hei(90%, fit-content);
+  }
+  >#icon-box{
+    @include wid-hei(90%, fit-content);
+    @include margin(20px, 5%);
+    margin: 20px 5%;
+
+    a{
+      display: block;
+      width: fit-content;
+    }
   }
 }
 
@@ -44,4 +56,18 @@
 }
 #mob::-webkit-scrollbar-track{
   border-radius: 10px;
+}
+
+// 커스텀
+h1{
+  line-height: 50px;
+  font-size: 16px;
+}
+h4{
+  line-height: 50px;
+  font-size: 14px;
+}
+p{
+  line-height: 30px;
+  font-size: 11px;
 }
