@@ -1,0 +1,37 @@
+#menu-bar {
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+}
+
+#menu-bar #sub-menu {
+  display: none;
+}
+
+#menu-bar #sub-menu a {
+  display: block;
+  margin: 20px auto;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--color-a);
+}
+
+#menu-bar #sub-menu a > i {
+  line-height: 60px;
+}
+
+#menu-bar #menu-box {
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--color-b);
+}
+
+#menu-bar #menu-box i {
+  line-height: 60px;
+}
+/*# sourceMappingURL=menu.css.map */

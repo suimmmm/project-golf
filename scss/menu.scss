@@ -1,0 +1,48 @@
+@mixin wid-hei($wid,$hei) {
+  width: $wid;
+  height: $hei;
+}
+@mixin flex($justify,$align,$direction,$wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin margin($t-b, $l-r) {
+  margin: $t-b $l-r;
+}
+
+
+#menu-bar{
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  #sub-menu{
+    display: none;
+    a{
+      display: block;
+      @include margin(20px, auto);
+      @include wid-hei(60px, 60px);
+      text-align: center;
+      border-radius: 50%;
+      background-color: var(--color-a);
+      
+      >i{
+        line-height: 60px;
+      }
+    }
+  }
+
+  #menu-box{
+    @include wid-hei(60px, 60px);
+    @include margin(20px, auto);
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color-b);
+
+    i{
+      line-height: 60px;
+    }
+  }
+}
