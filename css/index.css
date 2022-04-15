@@ -33,25 +33,8 @@
 }
 
 #txt-box {
-  width: 90%;
-  height: 20%;
   color: var(--color-f);
   text-align: center;
-}
-
-#txt-box h1 {
-  line-height: 50px;
-}
-
-#txt-box p {
-  line-height: 30px;
-}
-
-#slide-box {
-  width: 90%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 #slide-box div {
@@ -106,17 +89,10 @@
   line-height: 250px;
 }
 
-#start {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 #start a {
   margin: 30px auto;
   width: 50%;
-  height: 60px;
+  height: 50px;
   border: 2px dashed var(--color-f);
   display: block;
   background-color: none;
@@ -127,7 +103,5 @@
 #start a h1 {
   letter-spacing: 3px;
   color: var(--color-f);
-  line-height: 50px;
-  font-size: 2rem;
 }
 /*# sourceMappingURL=index.css.map */

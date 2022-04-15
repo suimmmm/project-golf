@@ -34,19 +34,11 @@
 
 // 텍스트
 #txt-box{
-  @include wid-hei(90%, 20%);
   color: var(--color-f);
   text-align: center;
-  h1{
-    line-height: 50px;
-  }
-  p{
-    line-height: 30px;
-  }
 }
 
 #slide-box{
-  @include wid-hei(90%, fit-content);
 
   div{
     border-radius: 50%;
@@ -60,14 +52,12 @@
     
     >#slide-bar{
       @include flex(space-between, center, row, nowrap);
-      width: 300%;
-      height: fit-content;
+      @include wid-hei(300%, fit-content);
       animation: 5s slide-a infinite;
 
       >#item{
         position: relative;
-        width: 500px;
-        height: 500px;
+        @include wid-hei(500px, 500px);
         animation: slide-a 7s ease-in-out infinite;
         top: 0;
         text-align: center;
@@ -80,12 +70,10 @@
   }
 }
 
-#start{
-  @include wid-hei(100%, fit-content);
-  
+#start{  
   a{
     @include margin(30px, auto);
-    @include wid-hei(50%, 60px);
+    @include wid-hei(50%, 50px);
     border: 2px dashed var(--color-f);
     display: block;
     background-color: none;
@@ -95,8 +83,6 @@
     h1{
       letter-spacing: 3px;
       color: var(--color-f);
-      line-height: 50px;
-      font-size: 2rem;
     }
   }
 }
