@@ -37,6 +37,21 @@
 3. 폰트어썸
 <script src="https://kit.fontawesome.com/d00def0550.js" crossorigin="anonymous"></script>
 
+4. scss 
+@mixin wid-hei($wid,$hei) {
+  width: $wid;
+  height: $hei;
+}
+@mixin flex($justify,$align,$direction,$wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin margin($t-b, $l-r) {
+  margin: $t-b $l-r;
+}
 
 어제 (0415) 메뉴 만들기까지 완성
 
