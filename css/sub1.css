@@ -6,6 +6,17 @@ h1 {
   margin: 20px auto;
 }
 
+textarea {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  resize: none;
+  background-color: var(--color-a);
+  border: none;
+}
+
 #info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,10 +101,6 @@ h1 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 10px;
-  resize: none;
-  background-color: var(--color-a);
-  border: none;
 }
 
 #agree {
@@ -151,5 +158,71 @@ h1 {
   color: var(--color-f);
   text-align: center;
   border-radius: 30px;
+}
+
+#b-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#b-box > div {
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#b-box > div input {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: var(--color-a);
+  border: none;
+}
+
+#sit-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#sit-box button {
+  width: 22%;
+  height: 50px;
+  margin: 10px auto;
+  border: none;
+  background-color: var(--color-c);
+  border-radius: 10px;
+  color: var(--color-f);
+}
+
+#request h1 {
+  margin: 0;
 }
 /*# sourceMappingURL=sub1.css.map */

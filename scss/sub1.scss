@@ -18,6 +18,14 @@ h1{
   @include margin(20px, auto);
 }
 
+textarea{
+  @include wid-hei(100%, fit-content);
+  padding: 10px;
+  resize: none;
+  background-color: var(--color-a);
+  border: none;
+}
+
 // 신청자
 #info{
   @include flex(space-between, flex-start, row, nowrap);
@@ -47,16 +55,13 @@ h1{
 
 // 상담내용
 #content{
-  @include flex(space-between, flex-start, row, nowrap);
-  
+  @include flex(space-between, flex-start, row, nowrap);  
+
   textarea{
     @include wid-hei(70%, fit-content);
-    padding: 10px;
-    resize: none;
-    background-color: var(--color-a);
-    border: none;
   }
 }
+
 
 // 개인정보 동의
 #agree{
@@ -73,6 +78,7 @@ h1{
   }
 }
 
+// 확인
 #check{
   a{
     display: block;
@@ -83,4 +89,44 @@ h1{
     text-align: center;
     border-radius: 30px;
   }
+}
+
+
+// 자리 예약
+#b-box{
+  @include flex(space-between, center, row, nowrap);
+
+  >div{
+    @include wid-hei(30%, fit-content);
+
+    input{
+      @include wid-hei(100%, 40px);
+      @include margin(10px, 0);
+      padding: 10px;
+      background-color: var(--color-a);
+      border: none;
+    }
+  }
+}
+
+#sit-box{
+  @include flex(space-between, flex-start, row, wrap);
+
+  button{
+    @include wid-hei(22%, 50px);
+    @include margin(10px, auto);
+    border: none;
+    background-color: var(--color-c);
+    border-radius: 10px;
+    color: var(--color-f);
+  }
+}
+
+// 특별요청
+#request{
+  h1{
+    margin: 0;
+  }
+
+  
 }
