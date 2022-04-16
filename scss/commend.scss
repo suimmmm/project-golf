@@ -41,10 +41,12 @@
   @include wid-hei(100vw, 100vh);
   overflow-y: scroll;
   position: relative;
+  z-index: 1;
   
   section{
     @include margin(30px, auto);
     @include wid-hei(90%, fit-content);
+    z-index: 2;
   }
 
   // 뒤로가기 아이콘
@@ -58,11 +60,9 @@
       width: fit-content;
       color: var(--color-d);
     }
-  }
-
-  // 슬라이드
-
+  }  
 }
+// 슬라이드
 #slide-box{
 
   div{
@@ -93,6 +93,11 @@
       }
     }
   }
+}
+
+// 메뉴
+#menu-bar{
+  z-index: 10;
 }
 
 // 스크롤바

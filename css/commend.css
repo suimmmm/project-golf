@@ -53,6 +53,7 @@
   height: 100vh;
   overflow-y: scroll;
   position: relative;
+  z-index: 1;
 }
 
 #mob section {
@@ -61,6 +62,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  z-index: 2;
 }
 
 #mob > #icon-box {
@@ -130,6 +132,10 @@
 #slide-box > #slide > #slide-bar > #item > i {
   color: var(--color-f);
   line-height: 250px;
+}
+
+#menu-bar {
+  z-index: 10;
 }
 
 #mob::-webkit-scrollbar {
