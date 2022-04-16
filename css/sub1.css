@@ -149,17 +149,6 @@ textarea {
   margin: 10px 10px;
 }
 
-#check a {
-  display: block;
-  width: 48%;
-  height: 40px;
-  margin: 0 auto;
-  background-color: var(--color-c);
-  color: var(--color-f);
-  text-align: center;
-  border-radius: 30px;
-}
-
 #b-box {
   display: -webkit-box;
   display: -ms-flexbox;
