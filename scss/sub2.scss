@@ -25,10 +25,11 @@
   >div{
     @include wid-hei(100%, 50%);
     transform: translateY(70%);
-    background-color: var(--color-b);
+    background-color: var(--color-d);
   }
 }
 
+// 프로필
 #profile-box{
   @include flex(flex-start, flex-end, row, nowrap);
 
@@ -40,5 +41,26 @@
 
   >#txt-box{
     @include margin(0, 10px);
+    color: var(--color-f)
+  }
+}
+
+// 목록
+#list-box{
+
+  a{
+    @include flex(flex-start, flex-end, row, nowrap);
+    @include margin(20px, 0);
+
+    #icon-box{
+      @include wid-hei(40px, 40px);
+      @include margin(0, 10px);
+      background-color: var(--color-b);
+      border-radius: 50%;
+
+      text-align: center;
+      line-height: 40px;
+      color: var(--color-d);
+    }
   }
 }

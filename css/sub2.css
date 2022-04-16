@@ -13,7 +13,7 @@
   height: 50%;
   -webkit-transform: translateY(70%);
           transform: translateY(70%);
-  background-color: var(--color-b);
+  background-color: var(--color-d);
 }
 
 #profile-box {
@@ -43,4 +43,35 @@
 
 #profile-box > #txt-box {
   margin: 0 10px;
+  color: var(--color-f);
+}
+
+#list-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 20px 0;
+}
+
+#list-box a #icon-box {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: var(--color-b);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: var(--color-d);
 }
