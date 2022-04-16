@@ -22,7 +22,20 @@
 @mixin margin($t-b, $l-r) {
   margin: $t-b $l-r;
 }
-
+@keyframes slide-a {
+  0%{
+    left: 0;
+  }
+  33%{
+    left: -30%;
+  }
+  66%{
+    left: -65%;
+  }
+  100%{
+    left: 0;
+  }
+}
 // 기본 커스텀
 #mob{
   @include wid-hei(100vw, 100vh);
@@ -49,33 +62,33 @@
 
   // 슬라이드
 
-  #slide-box{
+}
+#slide-box{
 
-    div{
-      border-radius: 50%;
-    }
-    >#slide{
-      @include wid-hei(250px, 250px); 
-      @include margin(10px, auto);
-      background-color: var(--color-a);
-      position: relative;
-      overflow: hidden;
-      
-      >#slide-bar{
-        @include flex(space-between, center, row, nowrap);
-        @include wid-hei(300%, fit-content);
-        animation: 5s slide-a infinite;
-  
-        >#item{
-          position: relative;
-          @include wid-hei(500px, 500px);
-          animation: slide-a 7s ease-in-out infinite;
-          top: 0;
-          text-align: center;
-          >i{
-            color: var(--color-f);
-            line-height: 250px;
-          }
+  div{
+    border-radius: 50%;
+  }
+  >#slide{
+    @include wid-hei(250px, 250px); 
+    @include margin(10px, auto);
+    background-color: var(--color-a);
+    position: relative;
+    overflow: hidden;
+    
+    >#slide-bar{
+      @include flex(space-between, center, row, nowrap);
+      @include wid-hei(300%, fit-content);
+      animation: 5s slide-a infinite;
+
+      >#item{
+        position: relative;
+        @include wid-hei(500px, 500px);
+        animation: slide-a 7s ease-in-out infinite;
+        top: 0;
+        text-align: center;
+        >i{
+          color: var(--color-f);
+          line-height: 250px;
         }
       }
     }
