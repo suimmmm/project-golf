@@ -1,0 +1,30 @@
+@mixin wid-hei($wid,$hei) {
+  width: $wid;
+  height: $hei;
+}
+@mixin flex($justify,$align,$direction,$wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin margin($t-b, $l-r) {
+  margin: $t-b $l-r;
+}
+
+#style-box{
+  @include wid-hei(100%, 200px);
+  background-color: var(--color-c);
+  z-index: -10;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  >div{
+    @include wid-hei(100%, 50%);
+    transform: translateY(70%);
+    background-color: var(--color-b);
+  }
+}

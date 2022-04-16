@@ -1,0 +1,18 @@
+#style-box {
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-c);
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#style-box > div {
+  width: 100%;
+  height: 50%;
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
+  background-color: var(--color-b);
+}
+/*# sourceMappingURL=sub2.css.map */
