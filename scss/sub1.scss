@@ -1,0 +1,14 @@
+@mixin wid-hei($wid,$hei) {
+  width: $wid;
+  height: $hei;
+}
+@mixin flex($justify,$align,$direction,$wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+@mixin margin($t-b, $l-r) {
+  margin: $t-b $l-r;
+}
