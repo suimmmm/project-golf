@@ -33,6 +33,8 @@
     @include margin(30px, auto);
     @include wid-hei(90%, fit-content);
   }
+
+  // 뒤로가기 아이콘
   >#icon-box{
     @include wid-hei(90%, fit-content);
     @include margin(20px, 5%);
@@ -42,6 +44,40 @@
       display: block;
       width: fit-content;
       color: var(--color-d);
+    }
+  }
+
+  // 슬라이드
+
+  #slide-box{
+
+    div{
+      border-radius: 50%;
+    }
+    >#slide{
+      @include wid-hei(250px, 250px); 
+      @include margin(10px, auto);
+      background-color: var(--color-a);
+      position: relative;
+      overflow: hidden;
+      
+      >#slide-bar{
+        @include flex(space-between, center, row, nowrap);
+        @include wid-hei(300%, fit-content);
+        animation: 5s slide-a infinite;
+  
+        >#item{
+          position: relative;
+          @include wid-hei(500px, 500px);
+          animation: slide-a 7s ease-in-out infinite;
+          top: 0;
+          text-align: center;
+          >i{
+            color: var(--color-f);
+            line-height: 250px;
+          }
+        }
+      }
     }
   }
 }
