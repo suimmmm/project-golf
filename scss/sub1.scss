@@ -12,3 +12,75 @@
 @mixin margin($t-b, $l-r) {
   margin: $t-b $l-r;
 }
+
+h1{
+  @include wid-hei(90%, fit-content);
+  @include margin(20px, auto);
+}
+
+// 신청자
+#info{
+  @include flex(space-between, flex-start, row, nowrap);
+
+  #title{
+    @include wid-hei(70%, fit-content);
+    
+    input{
+      @include wid-hei(100%, 40px);
+      padding: 10px;
+      background-color: var(--color-a);
+      border: none;
+      text-align: center
+    }
+
+    #num{
+      @include flex(space-between, center, row, nowrap);
+      @include wid-hei(100%, fit-content);
+      @include margin(10px, 0);
+
+      input{
+        width: 30%;
+      }
+    }
+  }
+}
+
+// 상담내용
+#content{
+  @include flex(space-between, flex-start, row, nowrap);
+  
+  textarea{
+    @include wid-hei(70%, fit-content);
+    padding: 10px;
+    resize: none;
+    background-color: var(--color-a);
+    border: none;
+  }
+}
+
+// 개인정보 동의
+#agree{
+  @include flex(space-between, flex-start, row, nowrap);
+
+  >#a-box{
+    @include wid-hei(70%, fit-content);
+    @include flex(flex-start, flex-start, row, nowrap);
+
+    input{
+      @include wid-hei(20px, 20px);
+      @include margin(10px, 10px);
+    }
+  }
+}
+
+#check{
+  a{
+    display: block;
+    @include wid-hei(48%, 40px);
+    @include margin(0, auto);
+    background-color: var(--color-c);
+    color: var(--color-f);
+    text-align: center;
+    border-radius: 30px;
+  }
+}
