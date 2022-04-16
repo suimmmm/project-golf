@@ -29,7 +29,7 @@
 
 2. 뒤로가기 아이콘
 <section id="icon-box">
-      <a href="./index.html">
+      <a href="./main.html">
         <i class="fa-solid fa-arrow-left fa-2x"></i>
       </a>
 </section>
