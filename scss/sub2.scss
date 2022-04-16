@@ -30,7 +30,6 @@
 }
 
 #profile-box{
-  border: 1px solid;
   @include flex(flex-start, flex-end, row, nowrap);
 
   >#img-box{

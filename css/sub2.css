@@ -17,7 +17,6 @@
 }
 
 #profile-box {
-  border: 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,4 +44,3 @@
 #profile-box > #txt-box {
   margin: 0 10px;
 }
-/*# sourceMappingURL=sub2.css.map */
