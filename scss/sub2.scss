@@ -28,3 +28,18 @@
     background-color: var(--color-b);
   }
 }
+
+#profile-box{
+  border: 1px solid;
+  @include flex(flex-start, flex-end, row, nowrap);
+
+  >#img-box{
+    @include wid-hei(100px, 100px);
+    background-color: var(--color-f);
+    border-radius: 30px;
+  }
+
+  >#txt-box{
+    @include margin(0, 10px);
+  }
+}
