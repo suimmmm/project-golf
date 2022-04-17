@@ -73,11 +73,12 @@ h1{
 // 프로님 프로필
 #pro-box{
   @include flex(space-around, center, row, nowrap);
+  @include wid-hei(100%, 200px);
   @include margin(10px, 0);
   background-color: var(--color-a);
 
   >#img-box{
-    @include wid-hei(100%, 140px);
+    @include wid-hei(400px, 180px);
     background-color: var(--color-d);
     @include margin(10px, 10px);
   }
@@ -87,7 +88,6 @@ h1{
 
     p{
       @include wid-hei(80%,fit-content);
-      border: 1px solid;
     }
 
     >#top{
@@ -99,7 +99,6 @@ h1{
 
       p{
       @include wid-hei(80%,100px);
-      overflow: scroll;
       line-height: 20px;
       }
     }
