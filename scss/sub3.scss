@@ -63,3 +63,72 @@ h1{
     border-radius: 50%;
   }
 }
+
+#who-feed{
+
+  >#av-box{
+
+    >#img-box{
+      @include wid-hei(100%, 200px);
+      background-color: var(--color-c);
+    }
+    
+    >#txt-box{
+      
+      div{
+        @include flex(flex-start, center, row, nowrap);
+        
+        h6{
+          @include wid-hei(80px, fit-content);
+        }
+      }
+    }
+  }
+}
+
+// 댓글
+#comment-box{
+
+  #comment{
+    @include wid-hei(100%, fit-content);
+    @include margin(5px, auto);
+    border-top: 1px solid var(--color-e);
+    border-bottom: 1px solid var(--color-e);
+    @include flex(space-between, flex-start, row, nowrap);
+
+    >#img-box{
+      @include wid-hei(40px, 40px);
+      background-color: var(--color-d);
+      @include margin(10px, 0);
+      border-radius: 10px;
+    }
+
+    >#txt-box{
+      @include wid-hei(85%,fit-content );
+
+      p{
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+//채팅
+#chatting-box{
+  // position: sticky;
+  background-color: var(--color-c);
+  width: 100% !important;
+
+  input{
+    @include wid-hei(80%, 60px);
+    padding: 0 20px;
+    background-color: var(--color-c);
+    color: var(--color-f);
+    border: none;
+  }
+  i{
+    color: var(--color-f);
+    margin: 10px 0;
+  }
+
+}
