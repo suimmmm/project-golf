@@ -1,1 +1,157 @@
-/* No CSS */
+#search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: var(--color-b);
+  border-radius: 10px;
+}
+
+#search > input {
+  width: 90%;
+  height: 50px;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: var(--color-b);
+  border: none;
+}
+
+#search button {
+  background-color: inherit;
+  border: none;
+}
+
+#search button i {
+  margin: 0 10px;
+  color: var(--color-f);
+}
+
+#explan-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-bottom: 1px solid var(--color-e);
+}
+
+#explan-box > #explan {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  text-align: center;
+}
+
+#explan-box > #explan > h4:hover {
+  border-bottom: 5px solid var(--color-d);
+}
+
+#cate-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#cate-box a {
+  background-color: var(--color-b);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#item-box > #item {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-e);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#item-box > #item > #txt-box {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#item-box > #item > #txt-box h4 {
+  line-height: 30px;
+}
+
+#item-box > #item i {
+  color: var(--color-d);
+}
+
+#btn {
+  width: 20%;
+  height: 20px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#btn > a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-c);
+  border-radius: 50%;
+}
