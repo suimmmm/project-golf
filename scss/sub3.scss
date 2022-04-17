@@ -12,3 +12,54 @@
 @mixin margin($t-b, $l-r) {
   margin: $t-b $l-r;
 }
+
+h1{
+  @include wid-hei(90%, fit-content);
+  @include margin(20px, auto);
+}
+
+#filter-box{
+  @include flex(space-between, center, row, wrap);
+  background-color: var(--color-a);
+  padding: 10px;
+
+  >a{
+    display: block;
+    background-color: var(--color-d);
+    color: var(--color-f);
+    padding: 10px;
+  }
+}
+
+#list-box{
+  @include flex(space-between, inherit, inherit, wrap);
+
+  >#list{
+    @include wid-hei(48%, fit-content);
+    @include margin(10px, auto);
+
+    >#img-box{
+      @include wid-hei(95%, 150px);
+      @include margin(0, auto);
+      background-color: var(--color-c);
+    }
+
+    >#txt-box{
+      @include wid-hei(95%, 50px);
+      @include margin(0, auto);
+      line-height: 20px;
+    }
+  }
+}
+
+#btn{
+  @include wid-hei(20%, 20px);
+  @include margin(0, auto);
+  @include flex(space-between, center , row, nowrap );
+  >a{
+    display: block;
+    @include wid-hei(20px, 20px);
+    background-color: var(--color-c);
+    border-radius: 50%;
+  }
+}

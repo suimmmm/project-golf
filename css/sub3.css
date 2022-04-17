@@ -1,1 +1,103 @@
-/* No CSS */
+h1 {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px auto;
+}
+
+#filter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: var(--color-a);
+  padding: 10px;
+}
+
+#filter-box > a {
+  display: block;
+  background-color: var(--color-d);
+  color: var(--color-f);
+  padding: 10px;
+}
+
+#list-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#list-box > #list {
+  width: 48%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px auto;
+}
+
+#list-box > #list > #img-box {
+  width: 95%;
+  height: 150px;
+  margin: 0 auto;
+  background-color: var(--color-c);
+}
+
+#list-box > #list > #txt-box {
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  line-height: 20px;
+}
+
+#btn {
+  width: 20%;
+  height: 20px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#btn > a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-c);
+  border-radius: 50%;
+}
