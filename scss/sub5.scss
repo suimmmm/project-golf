@@ -13,3 +13,31 @@
   margin: $t-b $l-r;
 }
 
+#mob>h1{
+  @include wid-hei(90%, fit-content);
+  @include margin(20px, auto);
+}
+
+#img-box{
+  background-color: var(--color-b);
+
+  #img{
+    @include wid-hei(100%, 200px);
+    background-color: var(--color-c);
+  }
+}
+
+#text-box{
+
+  h6{
+    @include wid-hei(60%, fit-content);
+  }
+}
+
+#time-box{
+  #txt-box{
+    @include wid-hei(40%, fit-content);
+    text-align: center;
+    @include flex(space-between, center, row, nowrap);
+  }
+}
