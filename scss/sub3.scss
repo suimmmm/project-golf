@@ -115,7 +115,8 @@ h1{
 
 //채팅
 #chatting-box{
-  // position: sticky;
+  position: fixed;
+  bottom: 0;
   background-color: var(--color-c);
   width: 100% !important;
 

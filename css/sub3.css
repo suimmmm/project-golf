@@ -178,6 +178,8 @@ h1 {
 }
 
 #chatting-box {
+  position: fixed;
+  bottom: 0;
   background-color: var(--color-c);
   width: 100% !important;
 }
