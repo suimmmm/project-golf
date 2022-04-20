@@ -83,6 +83,12 @@ textarea{
       background-color: var(--color-a);
       border: none;
     }
+    >div{
+      @include wid-hei(100%, 40px);
+      @include margin(10px, 0);
+      padding: 10px;
+      background-color: var(--color-a);
+    }
   }
 }
 
