@@ -40,16 +40,6 @@ textarea{
       border: none;
       text-align: center
     }
-
-    #num{
-      @include flex(space-between, center, row, nowrap);
-      @include wid-hei(100%, fit-content);
-      @include margin(10px, 0);
-
-      input{
-        width: 30%;
-      }
-    }
   }
 }
 
