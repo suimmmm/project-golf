@@ -16,7 +16,7 @@ checkBox.addEventListener('click', event =>{
     is_check = true;
   }
   else if(selectBox.checked == false){
-    alert('동의');
+    alert('동의 해주세요');
     is_check =false;
   }
   nameValue.value ="";
