@@ -183,3 +183,11 @@ p {
   line-height: 30px;
   font-size: 11px;
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
