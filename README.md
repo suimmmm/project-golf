@@ -62,4 +62,4 @@
 0425 js 작업시작
 1. 프로필 사진 업로드
 2. 공지사항 / FAQ
-3. 일정
+3. 일정 https://jerryjerryjerry.tistory.com/26
