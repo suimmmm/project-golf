@@ -1,1 +1,12 @@
-/* No CSS */
+table {
+  width: 100%;
+  border: 1px solid red;
+}
+
+table tr td {
+  border: 1px solid;
+  width: calc(100%/7);
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
