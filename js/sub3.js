@@ -11,7 +11,7 @@ filterBox.addEventListener('click', event =>{
   let filter = event.target.dataset.value;
   // console.log(filter);
 
-  for(var item of list){
+  for(let item of list){
     // console.dir(item.dataset.group);
     let itemSplit = item.dataset.group.split(' ');
     // console.log(itemSplit);
