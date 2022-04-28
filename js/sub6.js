@@ -34,7 +34,7 @@ function stackCal(){
   for(i=0; i<=firstMonth.getDay();i++){
     // 이번달의 day만큼 돌림
     let cell = row.insertCell(); // 열 한칸 만듬
-    console.log(row.insertCell())
+    // console.log(row.insertCell())
     cnt += 1;
     // console.log(cnt);
   }
