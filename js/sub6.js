@@ -39,8 +39,8 @@ function stackCal(){
     // console.log(cnt);
   }
 
-  let oneColor = '<p style="color:#ff5555;">';
-  let twoColor = '<p style="color:#87ceeb;">';
+  let oneColor = '<p style="color:#ff5555;font-size:16px;">';
+  let twoColor = '<p style="color:#87ceeb;font-size:16px;">';
 
   // 달력출력
   for(i = 1; i<=lastDate.getDate();i++){
@@ -51,11 +51,11 @@ function stackCal(){
 
     // 일요일
     if(cnt%7 === 1){
-      cell.innerHTML = `${oneColor}${i}<p>`;
+      cell.innerHTML = `${oneColor}${i}`;
     }
     // 토요일
     if(cnt%7 === 0){
-      cell.innerHTML = `${twoColor}${i}<p>`;
+      cell.innerHTML = `${twoColor}${i}`;
       row = calendar.insertRow();
     }
 
