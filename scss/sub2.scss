@@ -120,32 +120,21 @@ h1{
 // 이미지 불러오기
 
 #file-box{
-  width: 100%;
-  height: 100%;
+  @include wid-hei(100%, 100%);
   background-color: rgba($color: #333, $alpha: 0.3);
   position: absolute;
   top: 0;
   left: 0;
+  @include flex(center, center, column, nowrap);
 
   #box{
-    width: 50%;
-    height: 50%;
+    @include wid-hei(80%, 20%);
     background-color: var(--color-f);
-    margin: 10% auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    @include margin(10%, auto);
+    @include flex(center, center, column, nowrap);
 
     input{
       visibility: hidden;
-    }
-
-    #img-box{
-      width: 80%;
-      height: 50%;
-      border-radius: 10px;
-      border: 1px solid var(--color-d);
     }
 
     >label{
@@ -155,19 +144,6 @@ h1{
       cursor: pointer;
       color: var(--color-f);
       background-color: var(--color-c);
-    }
-    div{
-      width: 40%;
-      text-align: center;
-
-      button{
-        margin: 0 auto;
-        width: fit-content;
-        padding: 5% 20%;
-        border: none;
-        border-radius: 10px;
-        background-color: var(--color-b);
-      }
     }
   }
 }
