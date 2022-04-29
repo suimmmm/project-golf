@@ -7,13 +7,22 @@
 }
 
 #img-box {
+  height: 200px !important;
   background-color: var(--color-b);
+  background-image: url("/img/golf-gb92b3fc81_640.jpg");
+  background-size: contain;
+  position: relative;
 }
 
 #img-box #img {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
   height: 200px;
   background-color: var(--color-c);
+  background-image: url("/img/1da4a98f778f28f75ae20cae6694223a.jpg");
+  background-size: cover;
 }
 
 #text-box h6 {

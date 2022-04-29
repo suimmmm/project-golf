@@ -106,7 +106,8 @@ h1{
 #event-box{
   padding: 10px;
   color: var(--color-f);
-  background-color: var(--color-d);
+  background-image: url('/img/feild.jpg');
+  background-size: cover;
 
   >h1{
     @include wid-hei(100%, fit-content);

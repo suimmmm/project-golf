@@ -29,7 +29,8 @@
 }
 
 #mob {
-  background-color: var(--color-d);
+  background-image: url("/img/golf-g4b6a5740f_640.jpg");
+  background-size: cover;
 }
 
 #txt-box {

@@ -91,8 +91,9 @@ h1{
 
   >#img-box{
     @include wid-hei(400px, 180px);
-    background-color: var(--color-d);
     @include margin(10px, 10px);
+    background-image: url('/img/1da4a98f778f28f75ae20cae6694223a.jpg');
+    background-size: cover;
   }
   
   >#txt-box{
